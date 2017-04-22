@@ -111,7 +111,10 @@
     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
+    <Compile Include="Assets\Ignite.cs" />
     <Compile Include="Assets\Prefabs\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Prefabs\Meteor Shower\Scripts\DestroyObjects.cs" />
+    <Compile Include="Assets\Prefabs\Meteor Shower\Scripts\MeteorSpawner.cs" />
     <Compile Include="Assets\Prefabs\ScoreTracker\ScoreTracker.cs" />
     <Compile Include="Assets\Prefabs\WindFunnel\Scripts\WindFunnel.cs" />
     <Compile Include="Assets\Prefabs\WindFunnel\Scripts\WindPush.cs" />

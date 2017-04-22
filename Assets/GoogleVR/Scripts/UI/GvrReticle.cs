@@ -63,12 +63,13 @@ public class GvrReticle : MonoBehaviour, IGvrGazePointer {
   void OnEnable() {
     GazeInputModule.gazePointer = this;
   }
-
+  /*
   void OnDisable() {
     if (GazeInputModule.gazePointer == this) {
       GazeInputModule.gazePointer = null;
     }
   }
+  */
 
   void Update() {
     UpdateDiameters();
