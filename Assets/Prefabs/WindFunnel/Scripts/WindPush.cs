@@ -3,9 +3,13 @@ using System.Collections;
 
 public class WindPush : MonoBehaviour {
 
-    private string blowableTag = "Blowable";
+    public GameObject cam;
+
+    private string buildingTag = "Blowable";
+    private string meteorTag = "Meteor";
     private WindFunnel windFunnel;
     private float windSpeed;
+    
 
     void Start()
     {
@@ -15,14 +19,17 @@ public class WindPush : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         windSpeed = windFunnel.GetComponent<WindFunnel>().GetCurrentWindSpeed();
-	}
+        
+    }
 
     void OnTriggerStay(Collider other)
     {
-        print("Collision with "+ other.gameObject.name);
-        if (other.gameObject.tag == blowableTag)
+        
+        if (other.gameObject.tag == buildingTag || other.gameObject.tag == meteorTag)
         {
-            other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.forward * windSpeed);
+            var heading = other.transform.position - transform.position;
+            var direction = heading / heading.magnitude;
+            other.gameObject.GetComponent<Rigidbody>().AddForce(direction * windSpeed);
         }
     }
 }

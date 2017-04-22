@@ -66,6 +66,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BlowFinder.cs" />
+    <Compile Include="Assets\Building.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\Teleport.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
     <Compile Include="Assets\Ignite.cs" />
+    <Compile Include="Assets\MicrophoneListener.cs" />
     <Compile Include="Assets\Prefabs\GameManager\GameManager.cs" />
     <Compile Include="Assets\Prefabs\Meteor Shower\Scripts\DestroyObjects.cs" />
     <Compile Include="Assets\Prefabs\Meteor Shower\Scripts\MeteorSpawner.cs" />

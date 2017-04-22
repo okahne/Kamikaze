@@ -8,7 +8,7 @@ public class ScoreTracker : MonoBehaviour {
     public Camera cam;
 
     private Text textField;
-    private string currentScore = "0";
+    private string amountOfBuildingsLeft;
     private GameManager gameManager;
 
     void Awake()
@@ -33,7 +33,7 @@ public class ScoreTracker : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        currentScore = gameManager.GetComponent<GameManager>().GetCurrentPoints().ToString();
-        textField.text = "Score: " + currentScore;
+        amountOfBuildingsLeft = gameManager.GetComponent<GameManager>().GetCurrentPoints().ToString();
+        textField.text = "Buildings: " + amountOfBuildingsLeft;
 	}
 }

@@ -4,6 +4,8 @@ using System.Collections;
 public class MeteorSpawner : MonoBehaviour {
 
     public GameObject meteor;
+    public float meteorSpeed = 2.5f;
+
     private GameObject go;
 
 	// Use this for initialization
@@ -18,7 +20,7 @@ public class MeteorSpawner : MonoBehaviour {
             Vector3 spawnLocation = new Vector3(Random.Range(-10f, 10f), 0f, Random.Range(-1f,1f));
             go = Instantiate(meteor, transform.position + spawnLocation, transform.rotation) as GameObject;
 
-            Vector3 randomMovement = new Vector3(-spawnLocation.x, -1, -spawnLocation.z);
+            Vector3 randomMovement = new Vector3(-spawnLocation.x/4, -meteorSpeed, -spawnLocation.z);
             go.GetComponent<Rigidbody>().velocity = randomMovement;
         }
         

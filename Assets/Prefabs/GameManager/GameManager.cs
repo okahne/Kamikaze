@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-    private float currentScore = 0f;
+    private float currentAmountOfBuildings = 0f;
 
 	// Use this for initialization
 	void Start () {
@@ -15,13 +15,14 @@ public class GameManager : MonoBehaviour {
         
 	}
 
-    public void AddPoints(float additionalPoints)
+
+    public void NewBuilding()
     {
-        currentScore += additionalPoints;
+        currentAmountOfBuildings ++;
     }
     public float GetCurrentPoints()
     {
-        return currentScore;
+        return currentAmountOfBuildings;
     }
 
 }
