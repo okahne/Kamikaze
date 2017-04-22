@@ -111,8 +111,8 @@
     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
-    <Compile Include="Assets\WindFunnel.cs" />
-    <Compile Include="Assets\WindPush.cs" />
+    <Compile Include="Assets\Prefabs\WindFunnel\Scripts\WindFunnel.cs" />
+    <Compile Include="Assets\Prefabs\WindFunnel\Scripts\WindPush.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
