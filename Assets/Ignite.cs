@@ -27,6 +27,7 @@ public class Ignite : MonoBehaviour {
         if (other.gameObject.CompareTag(buildingTag))
         {
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            other.gameObject.GetComponent<Building>().SetOnFire();
             Destroy(gameObject);
         }
         else if (other.gameObject.CompareTag("Ground"))

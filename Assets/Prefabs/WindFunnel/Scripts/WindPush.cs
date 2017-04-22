@@ -31,5 +31,9 @@ public class WindPush : MonoBehaviour {
             var direction = heading / heading.magnitude;
             other.gameObject.GetComponent<Rigidbody>().AddForce(direction * windSpeed);
         }
+        if (other.gameObject.tag == buildingTag && other.gameObject.GetComponent<Building>().isOnFire)
+        {
+
+        }
     }
 }
