@@ -6,11 +6,11 @@ public class WindFunnel : MonoBehaviour {
     public GameObject blowCone;
 
     [SerializeField]
-    float coneRadiusMultiplier = 0.5f;
+    float coneRadiusMultiplier = 0.05f;
     [SerializeField]
-    float coneLengthMultiplier = 1f;
+    float coneLengthMultiplier = 0.1f;
 
-    private float blowStrength = 0f;
+    private float blowStrength = 10f;
 
     // Use this for initialization
     void Start () {
@@ -22,15 +22,15 @@ public class WindFunnel : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            blowStrength = 1f;
+            blowStrength = 10f;
         }
         if (Input.GetKey(KeyCode.Alpha2))
         {
-            blowStrength = 2f;
+            blowStrength = 20f;
         }
         if (Input.GetKey(KeyCode.Alpha3))
         {
-            blowStrength = 3f;
+            blowStrength = 30f;
         }
 
 
@@ -44,6 +44,11 @@ public class WindFunnel : MonoBehaviour {
             blowCone.SetActive(false);
         }
 	}
+
+    public float GetCurrentWindSpeed()
+    {
+        return blowStrength;
+    }
 
     void ModifyCone(float newBlowStrength)
     {
