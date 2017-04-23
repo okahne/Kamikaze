@@ -112,12 +112,16 @@
     <Compile Include="Assets\GoogleVR\Legacy\Editor\GvrMenu.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Editor\GvrViewerEditor.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Editor\StereoControllerEditor.cs" />
+    <Compile Include="Assets\MicControl3\Source\Editor\MenuButtonC.cs" />
+    <Compile Include="Assets\MicControl3\Source\Editor\MicControlEditorC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
     <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
     <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
     <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\MicControl3\ReadMe_Documentation.txt" />
+    <None Include="Assets\MicControl3\UpdateLog.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />

@@ -114,6 +114,14 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
     <Compile Include="Assets\Ignite.cs" />
+    <Compile Include="Assets\MicControl3\Reference\Call_Loudness.cs" />
+    <Compile Include="Assets\MicControl3\Reference\Call_SpectrumData.cs" />
+    <Compile Include="Assets\MicControl3\Reference\Frame_average_Loudness.cs" />
+    <Compile Include="Assets\MicControl3\Reference\LightIntensity_Loudness.cs" />
+    <Compile Include="Assets\MicControl3\Reference\Scale_SpectrumData.cs" />
+    <Compile Include="Assets\MicControl3\Reference\timeScale_Loudness.cs" />
+    <Compile Include="Assets\MicControl3\Reference\timeScale_average_Loudness.cs" />
+    <Compile Include="Assets\MicControl3\Source\Code\MicControlC.cs" />
     <Compile Include="Assets\MicrophoneListener.cs" />
     <Compile Include="Assets\Prefabs\GameManager\GameManager.cs" />
     <Compile Include="Assets\Prefabs\Meteor Shower\Scripts\DestroyObjects.cs" />
@@ -127,6 +135,8 @@
     <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
     <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
     <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\MicControl3\ReadMe_Documentation.txt" />
+    <None Include="Assets\MicControl3\UpdateLog.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
