@@ -66,8 +66,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BlowFinder.cs" />
-    <Compile Include="Assets\Building.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\Teleport.cs" />
@@ -113,7 +111,6 @@
     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
-    <Compile Include="Assets\Ignite.cs" />
     <Compile Include="Assets\MicControl3\Reference\Call_Loudness.cs" />
     <Compile Include="Assets\MicControl3\Reference\Call_SpectrumData.cs" />
     <Compile Include="Assets\MicControl3\Reference\Frame_average_Loudness.cs" />
@@ -122,14 +119,18 @@
     <Compile Include="Assets\MicControl3\Reference\timeScale_Loudness.cs" />
     <Compile Include="Assets\MicControl3\Reference\timeScale_average_Loudness.cs" />
     <Compile Include="Assets\MicControl3\Source\Code\MicControlC.cs" />
-    <Compile Include="Assets\MicrophoneListener.cs" />
+    <Compile Include="Assets\Prefabs\BlowFinder.cs" />
+    <Compile Include="Assets\Prefabs\Building.cs" />
+    <Compile Include="Assets\Prefabs\DestroyAfterTimer.cs" />
     <Compile Include="Assets\Prefabs\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Prefabs\Ignite.cs" />
     <Compile Include="Assets\Prefabs\Meteor Shower\Scripts\DestroyObjects.cs" />
     <Compile Include="Assets\Prefabs\Meteor Shower\Scripts\MeteorSpawner.cs" />
+    <Compile Include="Assets\Prefabs\MicrophoneListener.cs" />
     <Compile Include="Assets\Prefabs\ScoreTracker\ScoreTracker.cs" />
+    <Compile Include="Assets\Prefabs\SoundAble.cs" />
     <Compile Include="Assets\Prefabs\WindFunnel\Scripts\WindFunnel.cs" />
     <Compile Include="Assets\Prefabs\WindFunnel\Scripts\WindPush.cs" />
-    <Compile Include="Assets\SoundAble.cs" />
     <Compile Include="Assets\ToonEnvironment\Scripts\FreeCamMouseLook.cs" />
     <Compile Include="Assets\ToonEnvironment\Scripts\Rotate.cs" />
     <Compile Include="Assets\ToonEnvironment\Scripts\SetSortingOrder.cs" />
