@@ -32,6 +32,7 @@ public class Building : MonoBehaviour {
         }
         if (hitPoints <= 0)
         {
+            FindObjectOfType<GameManager>().GetComponent<GameManager>().DestroyBuilding();
             Destroy(gameObject);
         }
 	}

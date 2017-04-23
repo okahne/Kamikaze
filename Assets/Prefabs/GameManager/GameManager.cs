@@ -18,7 +18,12 @@ public class GameManager : MonoBehaviour {
 
     public void NewBuilding()
     {
-        currentAmountOfBuildings ++;
+        currentAmountOfBuildings++;
+    }
+
+    public void DestroyBuilding()
+    {
+        currentAmountOfBuildings--;
     }
     public float GetCurrentPoints()
     {

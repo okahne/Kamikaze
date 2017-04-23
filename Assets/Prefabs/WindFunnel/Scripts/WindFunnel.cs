@@ -4,55 +4,52 @@ using System.Collections;
 public class WindFunnel : MonoBehaviour {
 
     public GameObject blowCone;
+    private MicControlC micControlC;
 
     [SerializeField]
-    float coneRadiusMultiplier = 0.05f;
+    float coneRadiusMultiplier;
     [SerializeField]
-    float coneLengthMultiplier = 0.1f;
+    float coneLengthMultiplier;
 
-    private float blowStrength = 10f;
+    const int blowAbleAmounts = 32;
+    private float blowStrength;
+    private float[] windArray = new float[blowAbleAmounts];
+    int frame = 0;
 
     // Use this for initialization
     void Start () {
-	
+
+        micControlC = FindObjectOfType<MicControlC>().GetComponent<MicControlC>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        UpdateBlowStrength();
+        ModifyCone(blowStrength);
+    }
 
-        if (Input.GetKey(KeyCode.Alpha1))
+    private void UpdateBlowStrength()
+    {
+        var newLoudness = micControlC.loudness;
+        windArray[frame] = newLoudness;
+        frame = ++frame % blowAbleAmounts;
+        blowStrength = 0;
+        foreach (var item in windArray)
         {
-            blowStrength = 10f;
+            blowStrength += item / blowAbleAmounts;
         }
-        if (Input.GetKey(KeyCode.Alpha2))
-        {
-            blowStrength = 20f;
-        }
-        if (Input.GetKey(KeyCode.Alpha3))
-        {
-            blowStrength = 30f;
-        }
-
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            ModifyCone(blowStrength);
-            blowCone.SetActive(true);
-        }
-        else
-        {
-            blowCone.SetActive(false);
-        }
-	}
+    }
 
     public float GetCurrentWindSpeed()
     {
-        return blowStrength;
+        // TODO Need to tweak
+        return blowStrength * coneLengthMultiplier * 5;
     }
 
     void ModifyCone(float newBlowStrength)
     {
-        Vector3 newScale = new Vector3(newBlowStrength * coneRadiusMultiplier, newBlowStrength * coneRadiusMultiplier, newBlowStrength * coneLengthMultiplier);
+        Vector3 newScale = new Vector3(newBlowStrength * coneRadiusMultiplier, newBlowStrength * coneRadiusMultiplier, newBlowStrength  * coneLengthMultiplier);
         blowCone.transform.localScale = newScale;
     }
 

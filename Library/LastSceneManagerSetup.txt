@@ -1,7 +1,4 @@
 sceneSetups:
-- path: Assets/GoogleVR/DemoScenes/HeadsetDemo/DemoScene.unity
-  isLoaded: 0
-  isActive: 0
 - path: Assets/_Scenes/01_Niklas_Demo.unity
   isLoaded: 1
   isActive: 1
